@@ -1,0 +1,1 @@
+ C:\\Users\\MAKEE\\Downloads\\supabase_flutter\\.dart_tool\\flutter_build\\05ad28388ef174b7eea9441f48447ef5\\native_assets.yaml: 
