@@ -39,7 +39,7 @@ class MainHomeView extends StatelessWidget {
                     onTabChange: (index) {
                       cubit.changeCurrentIndex(index);
                     },
-                    selectedIndex: 2,
+                    selectedIndex: 0,
                     rippleColor: AppColors
                         .kPrimaryColor, // tab button ripple color when pressed
                     hoverColor:

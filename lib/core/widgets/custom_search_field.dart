@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 import '../app_colors.dart';
 
-class customSearchField extends StatelessWidget {
-  const customSearchField({
+class CustomSearchField extends StatelessWidget {
+  const CustomSearchField({
     super.key,
   });
 

@@ -4,6 +4,8 @@ import 'package:subabase/core/app_colors.dart';
 import 'package:get/get.dart';
 import 'package:subabase/views/auth/ui/login_view.dart';
 
+import 'views/nav_bar/ui/main_home_view.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -46,6 +48,6 @@ class _MyAppState extends State<MyApp> {
         //   brightness: Brightness.dark,
         // ),
         // themeMode: _themeMode,
-        home: const LoginView());
+        home: MainHomeView());
   }
 }
