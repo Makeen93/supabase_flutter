@@ -5,19 +5,21 @@ import '../../../../core/app_colors.dart';
 
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField(
-      {Key? key,
+      {super.key,
       required this.labelText,
       this.sufficxIcon,
       this.isSecured = false,
-      this.keyboardType})
-      : super(key: key);
+      this.keyboardType,
+      this.controller});
   final String labelText;
   final Widget? sufficxIcon;
   final bool isSecured;
   final TextInputType? keyboardType;
+  final TextEditingController? controller;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       obscureText: isSecured,
       obscuringCharacter: '*',
       validator: (value) {
@@ -31,15 +33,18 @@ class CustomTextFormField extends StatelessWidget {
         labelText: labelText,
         suffixIcon: sufficxIcon,
         border: OutlineInputBorder(
-          borderSide: BorderSide(width: 2, color: AppColors.kBordersideColor),
+          borderSide:
+              const BorderSide(width: 2, color: AppColors.kBordersideColor),
           borderRadius: BorderRadius.circular(8),
         ),
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(width: 2, color: AppColors.kBordersideColor),
+          borderSide:
+              const BorderSide(width: 2, color: AppColors.kBordersideColor),
           borderRadius: BorderRadius.circular(8),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(width: 2, color: AppColors.kBordersideColor),
+          borderSide:
+              const BorderSide(width: 2, color: AppColors.kBordersideColor),
           borderRadius: BorderRadius.circular(8),
         ),
       ),
