@@ -117,7 +117,7 @@
     },
     {
       "name": "flutter_bloc",
-      "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_bloc-9.1.0",
+      "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_bloc-9.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -164,10 +164,46 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "google_identity_services_web",
+      "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/google_identity_services_web-0.3.3+1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "google_nav_bar",
       "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/google_nav_bar-5.0.7",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "google_sign_in",
+      "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in-6.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "google_sign_in_android",
+      "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in_android-6.1.35",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "google_sign_in_ios",
+      "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in_ios-5.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "google_sign_in_platform_interface",
+      "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in_platform_interface-2.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "google_sign_in_web",
+      "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in_web-0.12.4+4",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
     },
     {
       "name": "gotrue",
@@ -327,7 +363,7 @@
     },
     {
       "name": "provider",
-      "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.4",
+      "rootUri": "file:///C:/Users/MAKEE/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.5",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -602,7 +638,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2025-04-19T12:31:25.896331Z",
+  "generated": "2025-08-06T19:42:40.116033Z",
   "generator": "pub",
   "generatorVersion": "3.5.1",
   "flutterRoot": "file:///C:/flutter",

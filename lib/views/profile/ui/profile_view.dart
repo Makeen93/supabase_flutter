@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:subabase/core/functions/navigate_to.dart';
 import 'package:subabase/views/profile/ui/edit_name_view.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../../core/app_colors.dart';
+import '../../auth/ui/login_view.dart';
 import 'widgets/custom_row_btn.dart';
 
 class ProfileView extends StatelessWidget {
@@ -67,7 +69,14 @@ class ProfileView extends StatelessWidget {
                   height: 10,
                 ),
                 CustomRowBtn(
-                  onTap: () {},
+                  onTap: () async {
+                    await Supabase.instance.client.auth.signOut();
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const LoginView(),
+                      ),
+                    );
+                  },
                   icon: Icons.logout,
                   text: 'Logout'.tr,
                 ),

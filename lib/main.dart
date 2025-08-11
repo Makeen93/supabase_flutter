@@ -11,10 +11,10 @@ import 'views/product_details/logic/cubit/authentication_cubit.dart';
 
 void main() async {
   await Supabase.initialize(
-    url: 'https://rpishakqwfdhzfbhfmwk.supabase.co',
-    anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaXNoYWtxd2ZkaHpmYmhmbXdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwNjUyODAsImV4cCI6MjA2MDY0MTI4MH0.Fxkysvl2_OBpsJDyPlK21BQDPpVIWJ3GSXMZKxv8_gE',
-  );
+      url: 'https://yfwlcxezbixmdigntjwv.supabase.co',
+      anonKey:
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlmd2xjeGV6Yml4bWRpZ250and2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ1MDcwOTEsImV4cCI6MjA3MDA4MzA5MX0.xx8c_2ghVHA4zvZdNMmj2yj2fi3kIZYxzJvalLN-IvY'
+     );
   runApp(const MyApp());
 }
 
@@ -26,6 +26,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  final supabase = Supabase.instance.client;
   final ThemeMode _themeMode = ThemeMode.system;
 
   bool get useLightMode {
@@ -46,19 +47,22 @@ class _MyAppState extends State<MyApp> {
     return BlocProvider(
       create: (context) => AuthenticationCubit(),
       child: MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'Our Market'.tr,
-          theme: ThemeData(
-            scaffoldBackgroundColor: AppColors.kScaffoldColor,
-            useMaterial3: true,
-            brightness: Brightness.light,
-          ),
-          // darkTheme: ThemeData(
-          //   useMaterial3: true,
-          //   brightness: Brightness.dark,
-          // ),
-          // themeMode: _themeMode,
-          home: const LoginView()),
+        debugShowCheckedModeBanner: false,
+        title: 'Our Market'.tr,
+        theme: ThemeData(
+          scaffoldBackgroundColor: AppColors.kScaffoldColor,
+          useMaterial3: true,
+          brightness: Brightness.light,
+        ),
+        // darkTheme: ThemeData(
+        //   useMaterial3: true,
+        //   brightness: Brightness.dark,
+        // ),
+        // themeMode: _themeMode,
+        home: supabase.auth.currentUser != null
+            ? MainHomeView()
+            : const LoginView(),
+      ),
     );
   }
 }
